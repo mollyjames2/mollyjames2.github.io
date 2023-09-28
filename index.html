@@ -17,9 +17,21 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(50.537360, -2.415609),
-            title: "Time: 28-09-2023 12:36:17 Drifter ID: drifter.18 Lat: 50.5374  Lon: -2.4156",
+            position: new google.maps.LatLng(50.536630, -2.416431),
+            title: "Time: 28-09-2023 12:37:33 Drifter ID: drifter.18 Lat: 50.5366  Lon: -2.4164",
             icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var marker_icon_0000FF = {
+            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAAB/UlEQVRIia3VMWsUQRgG4GcvJCqopZhITgs7EcVCLMTKwkJTqoj4C4ToT1AbRZSIjWCrRbCL2JigRlJFDCiIpBCSwogYRFGjiXKfxewSOS93l9t7Ydhjdr7n5nZn5jLNsweHsQMV1PAeU3jTova/HMU0gmpwPDibX6uR+k3n41omw1WyGqeDmaAWRF2biXQ/q6XxsmbgCFuChw2gRm0s0ngja8HDbAym2gSLNhWpznA9OIAf3FgnWLSbkeoN/IteYWew0iG6EuyK5KRlAkOcQ287L7NBeqV6Q0VPD5aZ6HCWRZuI5Oip5F/TR7XDWRapSo7eympnlERX6ytYSW2+JDqvsIr9/JbJkuik5KgVPZcZDJZLLKnBSM5q+vGNax2i1yPV66+f/3n6gmfrBCeDDZHqG+dWOiBetAm+DLZGqls7Ge4zECy0ABeL5ziqydFXZBNecywan6VFOxWYxeZWYJH9+M29NcDxkFb7kXbBIrfTz/tVB9aCg4EH6wVhG5a4W4c+CWmB7+0EhTvsq0NPBiY6BeEAglc5+CXyv44zZVCY5VKOjgaWtHjjlWY38zxiPP/4GJ7ie6lp4kTahsvB7sDFsiBsR34mZIFD3UDhExcCf6Qd1zTtPFOY4znpeP/ZLXSRdwXaMu2in/lKOoi7hn7MrwvdRD/k17l2Bv8FssfECaMr+zoAAAAASUVORK5CYII=",
+            labelOrigin: new google.maps.Point(10, 11)
+        };
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(50.608330, -2.448794),
+            title: "Time: 28-09-2023 12:37:20 Drifter ID: drifter.11 Lat: 50.6083  Lon: -2.4488",
+            icon: marker_icon_0000FF,
             map: map
         });
 
@@ -787,6 +799,24 @@
                 new google.maps.LatLng(50.537660, -2.415287),
                 new google.maps.LatLng(50.537530, -2.415417),
                 new google.maps.LatLng(50.537360, -2.415609),
+                new google.maps.LatLng(50.537240, -2.415743),
+                new google.maps.LatLng(50.537120, -2.415866),
+                new google.maps.LatLng(50.537010, -2.416034),
+                new google.maps.LatLng(50.536900, -2.416158),
+                new google.maps.LatLng(50.536760, -2.416299),
+                new google.maps.LatLng(50.536630, -2.416431),
+            ]
+        });
+
+        new google.maps.Polyline({
+            clickable: false,
+            geodesic: true,
+            strokeColor: "#0000FF",
+            strokeOpacity: 1.000000,
+            strokeWeight: 2,
+            map: map,
+            path: [
+                new google.maps.LatLng(50.608330, -2.448794),
             ]
         });
 
