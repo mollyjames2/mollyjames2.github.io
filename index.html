@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(50.393790, -4.168639)
+            center: new google.maps.LatLng(50.393880, -4.168421)
         });
 
         var marker_icon_FF0000 = {
@@ -16,12 +16,19 @@
             labelOrigin: new google.maps.Point(10, 11)
         };
 
-        new google.maps.Marker({
-            position: new google.maps.LatLng(50.393790, -4.168639),
-            title: "Last recorded time: 29-09-2023 21:03:47 Lat: 50.3938  Lon: -4.1686",
+        var info_marker_0 = new google.maps.Marker({
+            position: new google.maps.LatLng(50.393880, -4.168421),
             label: "99",
             icon: marker_icon_FF0000,
             map: map
+        });
+
+        var info_window_0 = new google.maps.InfoWindow({
+            content: 'Last recorded time: 29-09-2023 21:07:35 Lat: 50.3939  Lon: -4.1684'
+        });
+        
+        info_marker_0.addListener('click', function() {
+            info_window_0.open(map, info_marker_0);
         });
 
         new google.maps.Polyline({
@@ -493,6 +500,14 @@
                 new google.maps.LatLng(50.393780, -4.168657),
                 new google.maps.LatLng(50.393780, -4.168657),
                 new google.maps.LatLng(50.393790, -4.168639),
+                new google.maps.LatLng(50.393840, -4.168529),
+                new google.maps.LatLng(50.393870, -4.168514),
+                new google.maps.LatLng(50.393360, -4.168057),
+                new google.maps.LatLng(50.393890, -4.168581),
+                new google.maps.LatLng(50.393930, -4.168500),
+                new google.maps.LatLng(50.393910, -4.168479),
+                new google.maps.LatLng(50.393910, -4.168427),
+                new google.maps.LatLng(50.393880, -4.168421),
             ]
         });
 
