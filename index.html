@@ -8,47 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(50.631177, -2.402996)
-        });
-
-        var marker_icon_800080 = {
-            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAACtElEQVRIia3VQWiTZxzH8U8SY5kQEoYH3Q4BZUWstbeuoO6klx08enOXuYOnHYTBbmM7DHYZ7OLYQea8DS8RFIR1wpjMdjJWY6lWIwnSxm5jNbTaUvPm3aFv1iaNzdu0v8vD+3/+v+/L8zz///MkbK4BHMfbSKKBGfyKyS7eDTqJcYRZ2bBff3jU0bBff5iVDRFG8yc7mRMdvr9MSHwyYCBxzDH77JNoS6uquu22SZNhKPwKn0Y/Aqk24Nd9+i6ccSZxwgkZmQ1AyMg47LD99iceeXQ8EORwsxP04112fXbWWQcc6LY9YK+98vKKiiMNjXmMrYe+hcIpp9JHHIkFbCorKy2tpPQevsdCMpo7n5PbM2x4S8Cmhg3Lye3BeVbLBE4PGZJq2Y34SkkZMgSnm9AUDuXlewI2FfkPIZVEGruzstuCRv7dSCe75PakJFaw8tzzbYEi/wpWmv08VVHZFjTyT6HRXP61CRMCQU/AQGDCBFxjraQu1tQW77jTE3TMmJraIi6y1lGLWKiovJ+Xl5OLDayoKChoaFzAz+uhMB4K35wy9e5BB2VkugKrqq644pVX3+DzZry9hW4GgnemTQ8OGtSn77XAl1667LIXXvyIc+vn2us0xLkFC8WCgnDtitygG26oqU3jQ1oTOxX/Ej547HG9qNgR+MQT992Hj6yeR4te11F/4ttRo+rqbUsJjRqFq/ilk3mzNv2iprZ0z72WYFnZjJnQuoPZCvQv/DBuvCV4111WS6fz3nSBwnfPPDNnDixb9tBDuLSZqRv0D0w/8ACUlNTVl0Tt2CsUrpeU/ofilg4nvlXorVmzAoGyMvzUzRAH+ntd3VNPzZuH32J4YunvESMh6nijW3Lc56QcXcIVqx23I9B/oqXHeh7iQv9dtgwLOwmdi8bZnYRWo7EcJ/k/HoHgSz/Z7awAAAAASUVORK5CYII=",
-            labelOrigin: new google.maps.Point(10, 11)
-        };
-
-        var info_marker_0 = new google.maps.Marker({
-            position: new google.maps.LatLng(50.631470, -2.402911),
-            label: "5",
-            icon: marker_icon_800080,
-            map: map
-        });
-
-        var info_window_0 = new google.maps.InfoWindow({
-            content: 'drifter.05 Last recorded time: 02-10-2023 09:29:24 Lat:50.6315 Lon: -2.4029 Average speed since release: 0.604km/h Distance travelled: 0.047km'
-        });
-        
-        info_marker_0.addListener('click', function() {
-            info_window_0.open(map, info_marker_0);
-        });
-
-        var marker_icon_FFFF00 = {
-            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAACU0lEQVRIia3Vv2sTYRgH8M9V0lYw4iRaSXVwEMQfFCwOUhcHFx21OPQvEMTVUUEUURQXwVUHcSkVB62ohWzFQAsiCoIKVoUiFX/ViHkcLleMttdr4hdeLne555P33rz3von8bMc+bEIXGniLKp4uVZQscf0AzmJPfz87d7JuHXNzTE/z5g2YxCk8WKZjEpxLEo3hYVGriUZDRLS2Wk0MD4sk0cC5nM5JcLlcFnfu/Ast1sbGRLkscHkp+ERvr6hWi4FZq1ZFb6/Aib/BPny9eHFlYNYuXRL42nQWcmbzZlGvt4fW62LLFoEzpNMEDo+MUCot9z8unlKJkZHUydBV2LZ/f3tglqEhsA2rulBCd39/Z2izvhul7PFFdIb+Wd+FOuqvX3eGNuvrqGfv87OJic7QZv2zpgdOVyrix4/2p1SlInD6zx/aiM/nz7eHXrgg8LnptOR4d7d4/Hhl4MSE6OkROL7U0Fwpl8XkZDHwyROxdq3AlbzxTnCzr0/MzOSDs7ML43hLztKXZTWmDx5cfC3N2tGjAs+xZjkwy278vHFjcXB8XCAwVBTMcrVSEfPzrWCjIQYHBW6vFIT1+Hb9eiv68KGQTvAd7aBwbdeuVvTIEaHAZpeXAcTUVArOzS1sHcfyirryvkQNL0ZH05N795if9x1jnaBwd3w8/XD/PniELwXqcnOopyddbLZuFTjZKQgbSNeEJBHYu1xBkcd/j9nRUSL8wlSHnVzI5MCAwMsiNxfpKcy+TLlCm05R9OOnT0gX4v+GfmgeZ/4n+q55fFXk5t99kkc0nvh3jgAAAABJRU5ErkJggg==",
-            labelOrigin: new google.maps.Point(10, 11)
-        };
-
-        var info_marker_1 = new google.maps.Marker({
-            position: new google.maps.LatLng(50.631110, -2.402909),
-            label: "10",
-            icon: marker_icon_FFFF00,
-            map: map
-        });
-
-        var info_window_1 = new google.maps.InfoWindow({
-            content: 'drifter.10 DRIFTER NOT REPORTING Last seen: 02-10-2023 09:25:30 50.63111 -2.402909'
-        });
-        
-        info_marker_1.addListener('click', function() {
-            info_window_1.open(map, info_marker_1);
+            center: new google.maps.LatLng(50.631210, -2.403080)
         });
 
         var marker_icon_F0E68C = {
@@ -56,66 +16,19 @@
             labelOrigin: new google.maps.Point(10, 11)
         };
 
-        var info_marker_2 = new google.maps.Marker({
-            position: new google.maps.LatLng(50.630950, -2.403169),
+        var info_marker_0 = new google.maps.Marker({
+            position: new google.maps.LatLng(50.631210, -2.403080),
             label: "20",
             icon: marker_icon_F0E68C,
             map: map
         });
 
-        var info_window_2 = new google.maps.InfoWindow({
-            content: 'drifter.20 Last recorded time: 02-10-2023 09:31:05 Lat:50.6309 Lon: -2.4032 Average speed since release: 0.259km/h Distance travelled: 0.024km'
+        var info_window_0 = new google.maps.InfoWindow({
+            content: 'drifter.20 Last recorded time: 02-10-2023 09:39:56 Lat:50.6312 Lon: -2.4031 Average speed since release: 0.225km/h Distance travelled: 0.054km'
         });
         
-        info_marker_2.addListener('click', function() {
-            info_window_2.open(map, info_marker_2);
-        });
-
-        new google.maps.Polyline({
-            clickable: false,
-            geodesic: true,
-            strokeColor: "#800080",
-            strokeOpacity: 1.000000,
-            strokeWeight: 2,
-            map: map,
-            path: [
-                new google.maps.LatLng(50.631060, -2.402952),
-                new google.maps.LatLng(50.631070, -2.402942),
-                new google.maps.LatLng(50.631100, -2.402925),
-                new google.maps.LatLng(50.631110, -2.402914),
-                new google.maps.LatLng(50.631130, -2.402903),
-                new google.maps.LatLng(50.631160, -2.402891),
-                new google.maps.LatLng(50.631180, -2.402888),
-                new google.maps.LatLng(50.631200, -2.402887),
-                new google.maps.LatLng(50.631220, -2.402894),
-                new google.maps.LatLng(50.631230, -2.402901),
-                new google.maps.LatLng(50.631250, -2.402917),
-                new google.maps.LatLng(50.631280, -2.402923),
-                new google.maps.LatLng(50.631290, -2.402929),
-                new google.maps.LatLng(50.631310, -2.402929),
-                new google.maps.LatLng(50.631330, -2.402926),
-                new google.maps.LatLng(50.631340, -2.402917),
-                new google.maps.LatLng(50.631360, -2.402915),
-                new google.maps.LatLng(50.631390, -2.402911),
-                new google.maps.LatLng(50.631420, -2.402906),
-                new google.maps.LatLng(50.631440, -2.402910),
-                new google.maps.LatLng(50.631460, -2.402910),
-                new google.maps.LatLng(50.631470, -2.402911),
-            ]
-        });
-
-        new google.maps.Polyline({
-            clickable: false,
-            geodesic: true,
-            strokeColor: "#FFFF00",
-            strokeOpacity: 1.000000,
-            strokeWeight: 2,
-            map: map,
-            path: [
-                new google.maps.LatLng(50.631080, -2.402930),
-                new google.maps.LatLng(50.631100, -2.402918),
-                new google.maps.LatLng(50.631110, -2.402909),
-            ]
+        info_marker_0.addListener('click', function() {
+            info_window_0.open(map, info_marker_0);
         });
 
         new google.maps.Polyline({
@@ -132,6 +45,14 @@
                 new google.maps.LatLng(50.630860, -2.403187),
                 new google.maps.LatLng(50.630900, -2.403174),
                 new google.maps.LatLng(50.630950, -2.403169),
+                new google.maps.LatLng(50.630980, -2.403158),
+                new google.maps.LatLng(50.631000, -2.403150),
+                new google.maps.LatLng(50.631050, -2.403130),
+                new google.maps.LatLng(50.631070, -2.403120),
+                new google.maps.LatLng(50.631110, -2.403122),
+                new google.maps.LatLng(50.631150, -2.403096),
+                new google.maps.LatLng(50.631180, -2.403093),
+                new google.maps.LatLng(50.631210, -2.403080),
             ]
         });
 
