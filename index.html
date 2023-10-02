@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(50.631870, -2.402970)
+            center: new google.maps.LatLng(50.631900, -2.402964)
         });
 
         var marker_icon_F0E68C = {
@@ -17,14 +17,14 @@
         };
 
         var info_marker_0 = new google.maps.Marker({
-            position: new google.maps.LatLng(50.631870, -2.402970),
+            position: new google.maps.LatLng(50.631900, -2.402964),
             label: "20",
             icon: marker_icon_F0E68C,
             map: map
         });
 
         var info_window_0 = new google.maps.InfoWindow({
-            content: 'drifter.20 Last recorded time: 02-10-2023 10:03:11 Lat:50.6319 Lon: -2.4030 Average speed since release: 0.209km/h Distance travelled: 0.131km'
+            content: 'drifter.20 Last recorded time: 02-10-2023 10:04:18 Lat:50.6319 Lon: -2.4030 Average speed since release: 0.209km/h Distance travelled: 0.135km'
         });
         
         info_marker_0.addListener('click', function() {
@@ -74,6 +74,7 @@
                 new google.maps.LatLng(50.631810, -2.402936),
                 new google.maps.LatLng(50.631830, -2.402930),
                 new google.maps.LatLng(50.631870, -2.402970),
+                new google.maps.LatLng(50.631900, -2.402964),
             ]
         });
 
