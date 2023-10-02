@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(50.631033, -2.403007)
+            center: new google.maps.LatLng(50.631080, -2.403010)
         });
 
         var marker_icon_800080 = {
@@ -17,14 +17,14 @@
         };
 
         var info_marker_0 = new google.maps.Marker({
-            position: new google.maps.LatLng(50.631220, -2.402894),
+            position: new google.maps.LatLng(50.631310, -2.402929),
             label: "5",
             icon: marker_icon_800080,
             map: map
         });
 
         var info_window_0 = new google.maps.InfoWindow({
-            content: 'drifter.05 Last recorded time: 02-10-2023 09:26:40 Lat:50.6312 Lon: -2.4029 Average speed since release: 0.590km/h Distance travelled: 0.019km'
+            content: 'drifter.05 Last recorded time: 02-10-2023 09:27:39 Lat:50.6313 Lon: -2.4029 Average speed since release: 0.597km/h Distance travelled: 0.029km'
         });
         
         info_marker_0.addListener('click', function() {
@@ -57,14 +57,14 @@
         };
 
         var info_marker_2 = new google.maps.Marker({
-            position: new google.maps.LatLng(50.630770, -2.403219),
+            position: new google.maps.LatLng(50.630820, -2.403193),
             label: "20",
             icon: marker_icon_F0E68C,
             map: map
         });
 
         var info_window_2 = new google.maps.InfoWindow({
-            content: 'drifter.20 Last recorded time: 02-10-2023 09:26:38 Lat:50.6308 Lon: -2.4032 Average speed since release: 0.215km/h Distance travelled: 0.004km'
+            content: 'drifter.20 Last recorded time: 02-10-2023 09:27:44 Lat:50.6308 Lon: -2.4032 Average speed since release: 0.244km/h Distance travelled: 0.009km'
         });
         
         info_marker_2.addListener('click', function() {
@@ -88,6 +88,11 @@
                 new google.maps.LatLng(50.631180, -2.402888),
                 new google.maps.LatLng(50.631200, -2.402887),
                 new google.maps.LatLng(50.631220, -2.402894),
+                new google.maps.LatLng(50.631230, -2.402901),
+                new google.maps.LatLng(50.631250, -2.402917),
+                new google.maps.LatLng(50.631280, -2.402923),
+                new google.maps.LatLng(50.631290, -2.402929),
+                new google.maps.LatLng(50.631310, -2.402929),
             ]
         });
 
@@ -115,6 +120,7 @@
             path: [
                 new google.maps.LatLng(50.630740, -2.403239),
                 new google.maps.LatLng(50.630770, -2.403219),
+                new google.maps.LatLng(50.630820, -2.403193),
             ]
         });
 
