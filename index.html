@@ -8,23 +8,23 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(50.630695, -2.403176)
+            center: new google.maps.LatLng(50.631033, -2.403007)
         });
 
-        var marker_icon_F0E68C = {
-            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAADJElEQVRIia3Wa0hTYRjA8f/ZmpWEpRCZ0z5oRXShoCKzCwUFUeAHIegCQXfCwKwIjD50AYs+FAVhaEh0obxgNCqNylneKi01p6ahZXpmReWaw+lx29sHd2qrTef0+XLgPc/z4zy8z/tyJIaOecBKQA9oABcgA2VAg78iyc/6OiAdWBqtn8L8uVFMDpvIL6sdU6OZTtkCUAUcB54Oh0rAWUmSjiUlLpRSkteyYF4UkuSd9s4kc+mKkQJDnRBCnAfSAOELlYCLkyaNT7l2ZTsb1s/1192fKHrSyJ7k29hs/ZeAVBXWeuSkTBg/7mTB3f2sWTVrWBBgZtxUEuLjyL/3Nt7hdHUDrzzRKOD+qRObdEmJiwIC1YjWTyE0NIRnJc2rgetAj8b97kBMdHjovl0rRwSqsXfnCmbERIQCB2BwTAASt25egk6n9V85ROh0WrZuXgyQqKJaYM6K5bFBgWokxMcCzAG0GkAHhETrw0eFuutDAJ3aPkIIvwWBhGe9BlAApaOze1Sou14BFPU8N5VXto0Kddc3AS61fcOdvGqUAWdQ4MCAkzt51QAG+DtSGbLZYsvIehEUevVaKbLZYgMy4O+JsgE9FZVtGxPiY5kRExEwWPGyjeTUHJxO1xGg2BMFeO10iQjDo/pla1fPZnrk5GHBunqZpG1Z9NqVy8Bpdd3X1XcrclrYtpKiQ0ROC/ML/uzuZdX6C8hmSy6wBY+rT/NPrgD2fPlqrT94OHfI2T2aVoBstrQAuz1BXyiAHdjx1PjekXevxidYUvqBAkMtwF4G98MrfKEAtcDVU+mP6Fcc3q0IwZlzhQD5gM9x8YcCnJHNFntO/huvxbKKVt7UfBZ4bMxI0G/Ajczscq/F7JuVMDg69cGgAJmmRjMNTV0AWK19FD5uAMgeqmg49C3Q8qDQBMCzkmb6+h123McxWBTgofFFCwDFz5sBjPjY8ZGixpraDpQBp3oT/ffzEAxa1a84qKr+xMf2HwCVY4F+Ab4/KDIhhHACdQHUBBRVCxfoBdAaSHIgXwrw3d16+1iiP63WPoCesUS/up/msUS73M9PgST/BmOKJbEl1gKmAAAAAElFTkSuQmCC",
+        var marker_icon_800080 = {
+            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAACtElEQVRIia3VQWiTZxzH8U8SY5kQEoYH3Q4BZUWstbeuoO6klx08enOXuYOnHYTBbmM7DHYZ7OLYQea8DS8RFIR1wpjMdjJWY6lWIwnSxm5jNbTaUvPm3aFv1iaNzdu0v8vD+3/+v+/L8zz///MkbK4BHMfbSKKBGfyKyS7eDTqJcYRZ2bBff3jU0bBff5iVDRFG8yc7mRMdvr9MSHwyYCBxzDH77JNoS6uquu22SZNhKPwKn0Y/Aqk24Nd9+i6ccSZxwgkZmQ1AyMg47LD99iceeXQ8EORwsxP04112fXbWWQcc6LY9YK+98vKKiiMNjXmMrYe+hcIpp9JHHIkFbCorKy2tpPQevsdCMpo7n5PbM2x4S8Cmhg3Lye3BeVbLBE4PGZJq2Y34SkkZMgSnm9AUDuXlewI2FfkPIZVEGruzstuCRv7dSCe75PakJFaw8tzzbYEi/wpWmv08VVHZFjTyT6HRXP61CRMCQU/AQGDCBFxjraQu1tQW77jTE3TMmJraIi6y1lGLWKiovJ+Xl5OLDayoKChoaFzAz+uhMB4K35wy9e5BB2VkugKrqq644pVX3+DzZry9hW4GgnemTQ8OGtSn77XAl1667LIXXvyIc+vn2us0xLkFC8WCgnDtitygG26oqU3jQ1oTOxX/Ej547HG9qNgR+MQT992Hj6yeR4te11F/4ttRo+rqbUsJjRqFq/ilk3mzNv2iprZ0z72WYFnZjJnQuoPZCvQv/DBuvCV4111WS6fz3nSBwnfPPDNnDixb9tBDuLSZqRv0D0w/8ACUlNTVl0Tt2CsUrpeU/ofilg4nvlXorVmzAoGyMvzUzRAH+ntd3VNPzZuH32J4YunvESMh6nijW3Lc56QcXcIVqx23I9B/oqXHeh7iQv9dtgwLOwmdi8bZnYRWo7EcJ/k/HoHgSz/Z7awAAAAASUVORK5CYII=",
             labelOrigin: new google.maps.Point(10, 11)
         };
 
         var info_marker_0 = new google.maps.Marker({
-            position: new google.maps.LatLng(50.630660, -2.403309),
-            label: "20",
-            icon: marker_icon_F0E68C,
+            position: new google.maps.LatLng(50.631220, -2.402894),
+            label: "5",
+            icon: marker_icon_800080,
             map: map
         });
 
         var info_window_0 = new google.maps.InfoWindow({
-            content: 'drifter.20 Last recorded time: 02-10-2023 09:22:10 Lat:50.6307 Lon: -2.4033 Average speed since release: 0.212km/h Distance travelled: 0.008km'
+            content: 'drifter.05 Last recorded time: 02-10-2023 09:26:40 Lat:50.6312 Lon: -2.4029 Average speed since release: 0.590km/h Distance travelled: 0.019km'
         });
         
         info_marker_0.addListener('click', function() {
@@ -37,31 +37,57 @@
         };
 
         var info_marker_1 = new google.maps.Marker({
-            position: new google.maps.LatLng(50.630730, -2.403043),
+            position: new google.maps.LatLng(50.631110, -2.402909),
             label: "10",
             icon: marker_icon_FFFF00,
             map: map
         });
 
         var info_window_1 = new google.maps.InfoWindow({
-            content: 'drifter.10 Last recorded time: 02-10-2023 09:21:54 Lat:50.6307 Lon: -2.4030 Average speed since release: 0.655km/h Distance travelled: 0.004km'
+            content: 'drifter.10 Last recorded time: 02-10-2023 09:25:30 Lat:50.6311 Lon: -2.4029 Average speed since release: 0.626km/h Distance travelled: 0.004km'
         });
         
         info_marker_1.addListener('click', function() {
             info_window_1.open(map, info_marker_1);
         });
 
+        var marker_icon_F0E68C = {
+            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAADJElEQVRIia3Wa0hTYRjA8f/ZmpWEpRCZ0z5oRXShoCKzCwUFUeAHIegCQXfCwKwIjD50AYs+FAVhaEh0obxgNCqNylneKi01p6ahZXpmReWaw+lx29sHd2qrTef0+XLgPc/z4zy8z/tyJIaOecBKQA9oABcgA2VAg78iyc/6OiAdWBqtn8L8uVFMDpvIL6sdU6OZTtkCUAUcB54Oh0rAWUmSjiUlLpRSkteyYF4UkuSd9s4kc+mKkQJDnRBCnAfSAOELlYCLkyaNT7l2ZTsb1s/1192fKHrSyJ7k29hs/ZeAVBXWeuSkTBg/7mTB3f2sWTVrWBBgZtxUEuLjyL/3Nt7hdHUDrzzRKOD+qRObdEmJiwIC1YjWTyE0NIRnJc2rgetAj8b97kBMdHjovl0rRwSqsXfnCmbERIQCB2BwTAASt25egk6n9V85ROh0WrZuXgyQqKJaYM6K5bFBgWokxMcCzAG0GkAHhETrw0eFuutDAJ3aPkIIvwWBhGe9BlAApaOze1Sou14BFPU8N5VXto0Kddc3AS61fcOdvGqUAWdQ4MCAkzt51QAG+DtSGbLZYsvIehEUevVaKbLZYgMy4O+JsgE9FZVtGxPiY5kRExEwWPGyjeTUHJxO1xGg2BMFeO10iQjDo/pla1fPZnrk5GHBunqZpG1Z9NqVy8Bpdd3X1XcrclrYtpKiQ0ROC/ML/uzuZdX6C8hmSy6wBY+rT/NPrgD2fPlqrT94OHfI2T2aVoBstrQAuz1BXyiAHdjx1PjekXevxidYUvqBAkMtwF4G98MrfKEAtcDVU+mP6Fcc3q0IwZlzhQD5gM9x8YcCnJHNFntO/huvxbKKVt7UfBZ4bMxI0G/Ajczscq/F7JuVMDg69cGgAJmmRjMNTV0AWK19FD5uAMgeqmg49C3Q8qDQBMCzkmb6+h123McxWBTgofFFCwDFz5sBjPjY8ZGixpraDpQBp3oT/ffzEAxa1a84qKr+xMf2HwCVY4F+Ab4/KDIhhHACdQHUBBRVCxfoBdAaSHIgXwrw3d16+1iiP63WPoCesUS/up/msUS73M9PgST/BmOKJbEl1gKmAAAAAElFTkSuQmCC",
+            labelOrigin: new google.maps.Point(10, 11)
+        };
+
+        var info_marker_2 = new google.maps.Marker({
+            position: new google.maps.LatLng(50.630770, -2.403219),
+            label: "20",
+            icon: marker_icon_F0E68C,
+            map: map
+        });
+
+        var info_window_2 = new google.maps.InfoWindow({
+            content: 'drifter.20 Last recorded time: 02-10-2023 09:26:38 Lat:50.6308 Lon: -2.4032 Average speed since release: 0.215km/h Distance travelled: 0.004km'
+        });
+        
+        info_marker_2.addListener('click', function() {
+            info_window_2.open(map, info_marker_2);
+        });
+
         new google.maps.Polyline({
             clickable: false,
             geodesic: true,
-            strokeColor: "#F0E68C",
+            strokeColor: "#800080",
             strokeOpacity: 1.000000,
             strokeWeight: 2,
             map: map,
             path: [
-                new google.maps.LatLng(50.630590, -2.403347),
-                new google.maps.LatLng(50.630630, -2.403340),
-                new google.maps.LatLng(50.630660, -2.403309),
+                new google.maps.LatLng(50.631060, -2.402952),
+                new google.maps.LatLng(50.631070, -2.402942),
+                new google.maps.LatLng(50.631100, -2.402925),
+                new google.maps.LatLng(50.631110, -2.402914),
+                new google.maps.LatLng(50.631130, -2.402903),
+                new google.maps.LatLng(50.631160, -2.402891),
+                new google.maps.LatLng(50.631180, -2.402888),
+                new google.maps.LatLng(50.631200, -2.402887),
+                new google.maps.LatLng(50.631220, -2.402894),
             ]
         });
 
@@ -73,9 +99,22 @@
             strokeWeight: 2,
             map: map,
             path: [
-                new google.maps.LatLng(50.630690, -2.403043),
-                new google.maps.LatLng(50.630710, -2.403043),
-                new google.maps.LatLng(50.630730, -2.403043),
+                new google.maps.LatLng(50.631080, -2.402930),
+                new google.maps.LatLng(50.631100, -2.402918),
+                new google.maps.LatLng(50.631110, -2.402909),
+            ]
+        });
+
+        new google.maps.Polyline({
+            clickable: false,
+            geodesic: true,
+            strokeColor: "#F0E68C",
+            strokeOpacity: 1.000000,
+            strokeWeight: 2,
+            map: map,
+            path: [
+                new google.maps.LatLng(50.630740, -2.403239),
+                new google.maps.LatLng(50.630770, -2.403219),
             ]
         });
 
