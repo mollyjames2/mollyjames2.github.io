@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(50.608180, -2.446590)
+            center: new google.maps.LatLng(50.608670, -2.444503)
         });
 
         var marker_icon_00FF00 = {
@@ -17,14 +17,14 @@
         };
 
         var info_marker_0 = new google.maps.Marker({
-            position: new google.maps.LatLng(50.608180, -2.446590),
+            position: new google.maps.LatLng(50.608670, -2.444503),
             label: "11",
             icon: marker_icon_00FF00,
             map: map
         });
 
         var info_window_0 = new google.maps.InfoWindow({
-            content: '\n                drifter.11\n\n                Last ping: 05-10-2023 09:07:01UTC\n \n                Lat:50.6082 Lon:-2.4466\n\n                Speed (averaged over 4:54 mins): 0.82ms-1\n                / 1.6 knots\n \n                Bearing (averaged over 4:54 mins): 94.0° \n\n                Total distance travelled:7.27km\n\n                drifter tracking for 0 days 12:42:40\n\n                2.14km from release location'
+            content: '\n                drifter.11\n\n                Last ping: 05-10-2023 09:08:04UTC\n \n                Lat:50.6087 Lon:-2.4445\n\n                Speed (averaged over 4:59 mins): 1.22ms-1\n                / 2.38 knots\n \n                Bearing (averaged over 4:59 mins): 88.0° \n\n                Total distance travelled:7.43km\n\n                drifter tracking for 0 days 12:43:43\n\n                2.28km from release location'
         });
         
         info_marker_0.addListener('click', function() {
@@ -5138,6 +5138,11 @@
                 new google.maps.LatLng(50.608180, -2.447012),
                 new google.maps.LatLng(50.608180, -2.446799),
                 new google.maps.LatLng(50.608180, -2.446590),
+                new google.maps.LatLng(50.608190, -2.446346),
+                new google.maps.LatLng(50.608220, -2.446137),
+                new google.maps.LatLng(50.608250, -2.445896),
+                new google.maps.LatLng(50.608300, -2.445697),
+                new google.maps.LatLng(50.608670, -2.444503),
             ]
         });
 
